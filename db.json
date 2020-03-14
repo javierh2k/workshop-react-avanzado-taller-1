@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "title": "test",
+      "author": "adv",
+      "id": 17
+    },
+    {
+      "title": "Another",
+      "author": "git",
+      "id": 19
+    }
+  ],
+  "comments": [
+    {
+      "title": "test1",
+      "body": "amazon",
+      "id": 2
+    },
+    {
+      "title": "test2",
+      "body": "red",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "Steve",
+    "lastname": "Jobs",
+    "status": "Active",
+    "theme": "light"
+  }
+}
