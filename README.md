@@ -1,5 +1,9 @@
 # Workshop 1 - bogota js
 
+
+# Now I apply status to comments with zustand (spectacular)
+
+
 > Install
 
 ## Build Setup

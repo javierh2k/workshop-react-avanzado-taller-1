@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import config from '../config'
 
 export function useCrud(url) {
   const [data, setData] = useState([]);
@@ -6,14 +7,13 @@ export function useCrud(url) {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(false);
 
-  const BASEURL = "http://localhost:1339";
-
+  const APIBASEURL = config.APIBASEURL
   useEffect(() => {
     async function fetchData() {
       try {
         setLoading(true);
         setError(false);
-        const res = await fetch(BASEURL + url, {
+        const res = await fetch(APIBASEURL + url, {
           cache: "default"
         });
 
@@ -38,7 +38,7 @@ export function useCrud(url) {
         {}
       );
 
-      const resp = await fetch(BASEURL + url + (id ? "/" + id : ""), {
+      const resp = await fetch(APIBASEURL + url + (id ? "/" + id : ""), {
         method: id ? "PUT" : "POST",
         headers,
         body: JSON.stringify(body)
@@ -73,7 +73,7 @@ export function useCrud(url) {
     try {
       setLoading(true);
       setError(false);
-      const resp = await fetch(BASEURL + url + "/" + id);
+      const resp = await fetch(APIBASEURL + url + "/" + id);
       const obj = await resp.json();
       setLoading(false);
       return obj;
@@ -88,7 +88,7 @@ export function useCrud(url) {
     try {
       setLoading(true);
       setError(false);
-      const resp = await fetch(BASEURL + url + "/" + id, {
+      const resp = await fetch(APIBASEURL + url + "/" + id, {
         method: "DELETE"
       });
       const obj = await resp.json();

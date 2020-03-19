@@ -14,6 +14,12 @@ import routes from "../../routes";
             <li className="nav-item">
               <Link className= {`nav-link ${match.type.name==='Posts'?"active":''}`}  href="/posts" >Posts</Link>
             </li>
+
+            <li className="nav-item">
+              <Link className={`nav-link ${match.type.name==='CommentsZustand'?"active":''}`}  href="/comments/zustand">Comments Zustand</Link>
+            </li>
+
+
             <li className="nav-item">
               <Link className={`nav-link ${match.type.name==='CommentsReduce'?"active":''}`}  href="/comments/reduce">Comments reduce</Link>
             </li>
