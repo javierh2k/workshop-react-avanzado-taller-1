@@ -1,5 +1,5 @@
 // import produce from 'immer';
-import { debugForm } from '../../helpers/index';
+import { debugForm } from '../../helpers/debugForm';
 import produce from "immer"
 import {api} from '../../helpers/apiCrudZustand'
 

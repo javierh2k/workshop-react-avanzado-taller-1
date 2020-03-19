@@ -1,5 +1,5 @@
 // import produce from 'immer';
-import { debugForm } from '../../helpers/index';
+import { debugForm } from '../../helpers/debugForm';
 
 export const reducer = (state) => {
      return {

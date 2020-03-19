@@ -7,7 +7,7 @@ import {
 import { Toasts } from "./Toasts";
 import { ModalForm } from "./ModalForm";
 import { Notification } from "./Styles";
-import { debugForm } from '../../helpers/index';
+import { debugForm } from '../../helpers/debugForm';
 import { TableForm } from './TableForm';
 
 function Comments() {
