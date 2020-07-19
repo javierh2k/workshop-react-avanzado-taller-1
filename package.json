@@ -17,7 +17,7 @@
     "hookrouter": "^1.2.3",
     "immer": "^6.0.1",
     "json-server": "^0.16.1",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "prop-types": "15.7.2",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
